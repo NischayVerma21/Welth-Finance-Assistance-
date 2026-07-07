@@ -1,40 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+**Welth – AI-Powered Personal Finance Management Platform**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Welth is a full-stack personal finance management platform designed to help individuals and small businesses efficiently manage, track, and analyze their finances. The platform enables users to create multiple accounts (such as Personal, Business, or Savings), record transactions, and monitor income and expenses through a personalized dashboard.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Users can set monthly budgets, and the platform continuously tracks spending against those budgets. When spending reaches 75% of the allocated budget, an automated email notification is triggered to help users avoid overspending. At the end of every month, users receive personalized financial reports summarizing their expenditure, savings, and overall financial performance.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+To simplify expense tracking, Welth integrates **Google Gemini AI** to scan and analyze bill receipts. The AI extracts transaction details, categorizes expenses, automatically registers them under the appropriate account, and generates personalized insights into monthly spending patterns, helping users better understand their financial habits and make informed financial decisions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The platform provides comprehensive financial analytics through interactive line charts, bar graphs, and pie charts, enabling users to visualize income trends, expense distribution, budget utilization, and account-wise financial performance.
 
-## Learn More
+On the backend, Welth leverages **Inngest** to execute asynchronous workflows such as budget alert notifications and monthly financial summary emails, ensuring reliable background task processing. **Arcjet** strengthens application security by protecting against common web attacks and abuse, while **Clerk** provides secure user authentication, session management, and request validation. **Supabase (PostgreSQL)** serves as the primary database, with **Prisma ORM** managing the database schema and queries.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
+**Tech Stack:** Next.js, React.js, Tailwind CSS, shadcn/ui, Clerk Authentication, Prisma ORM, Supabase (PostgreSQL), Inngest, Arcjet, Google Gemini AI.
 
 
 Arcjet
