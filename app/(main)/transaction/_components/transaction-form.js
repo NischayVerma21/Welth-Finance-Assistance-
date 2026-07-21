@@ -177,7 +177,7 @@ export function AddTransactionForm({
                                     const selectedId = watch("accountId");
                                     const account = accounts?.find((a) => a.id === selectedId);
                                     if (account) {
-                                        return `${account.name} ($${parseFloat(account.balance).toFixed(2)})`;
+                                        return `${account.name} (₹${parseFloat(account.balance).toFixed(2)})`;
                                     }
                                     return undefined;
                                 })()}
