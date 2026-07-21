@@ -186,7 +186,7 @@ export function AddTransactionForm({
                         <SelectContent>
                             {accounts && accounts.map((account) => (
                                 <SelectItem key={account.id} value={account.id}>
-                                    {account.name} (${parseFloat(account.balance).toFixed(2)})
+                                    {account.name} (₹{parseFloat(account.balance).toFixed(2)})
                                 </SelectItem>
                             ))}
                             <div className="p-1 border-t border-muted">
